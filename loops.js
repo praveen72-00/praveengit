@@ -16,13 +16,23 @@
 // }
 // console.log(num);
 
-let num =1;
-let fac=5;
-let i=1;
+// let num =1;
+// let fac=5;
+// let i=1;
 
-while (i<=fac){
+// while (i<=fac){
    
-    num=num*i;
-     i++;
-}
-console.log(num );
+//     num=num*i;
+//      i++;
+// }
+//console.log(num );
+
+// for (let i=2;i<=10;i++){-----------nested loop
+// for (let j=1;j<=10;j++){
+
+//     console.log (i+"x"+"="+j+i*j);
+// }}
+// let q=2;
+// for(let i=1;i<=10;i++){
+//     console.log(q+"x"+i+"="+q*i);
+// }

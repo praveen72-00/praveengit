@@ -81,6 +81,42 @@
 // }
 
 
+//function 
+// l
+
+//return keyword
+
+// function add(a,b=20) //defulat parameter 
+// {
+
+//     return a+b
+
+// }
+// let added = add;
+// console.log (added(2)); we are declearing the function to the new 
+//variable and call and print form any where
+
+//----------arror function / nameless funtion 
+
+// let OddOrEven= (a) => a%2==0? "even" : "odd";
+// console.log (OddOrEven(2))
+
+//call backfunction 
+
+// function praveen (z,a,b){
+//     return z(a,b);
+// }
+// function add(a,b){
+//     return a+b;
+
+// }
+// console.log(praveen(add,5,6))
+
+// function myname(){
+//     return("pravenn ");
+
+// }
+// console.log(myname())
 
 
 
