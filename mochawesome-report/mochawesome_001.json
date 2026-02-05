@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-12-17T07:51:59.080Z",
+    "end": "2025-12-17T07:52:15.194Z",
+    "duration": 16114,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1bd37e71-13dd-45e1-90f7-6d4cb51efd24",
+      "title": "",
+      "fullFile": "/Users/praveen/Documents/learn javascript/mocha.js",
+      "file": "/mocha.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a625e316-983f-4cd5-a2ad-2185c39c4578",
+          "title": "this is a sample of random web site mocha test ",
+          "fullFile": "/Users/praveen/Documents/learn javascript/mocha.js",
+          "file": "/mocha.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook: this code will work before each it block in \"this is a sample of random web site mocha test \"",
+              "fullTitle": "this is a sample of random web site mocha test  \"before each\" hook: this code will work before each it block in \"this is a sample of random web site mocha test \"",
+              "timedOut": false,
+              "duration": 738,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver=await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "1a5b9e80-643c-4c20-bc4d-4ee83a150929",
+              "parentUUID": "a625e316-983f-4cd5-a2ad-2185c39c4578",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook: this will run after each block in \"this is a sample of random web site mocha test \"",
+              "fullTitle": "this is a sample of random web site mocha test  \"after each\" hook: this will run after each block in \"this is a sample of random web site mocha test \"",
+              "timedOut": false,
+              "duration": 57,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "3ab19f1a-498b-4ca9-9f91-b3440a2e995f",
+              "parentUUID": "a625e316-983f-4cd5-a2ad-2185c39c4578",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "this is the test 1 for randome website ",
+              "fullTitle": "this is a sample of random web site mocha test  this is the test 1 for randome website ",
+              "timedOut": false,
+              "duration": 8853,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.zoho.com\");\nawait driver.manage().window().fullscreen();\n  let zo=  await driver.wait(until.elementLocated(By.xpath(\"//button[@class='zgh-search-icon']\")));\n  await zo.click();\n let search = await driver.wait(\n    until.elementLocated(By.id(\"zgh-search-query\"))\n);\nawait driver.wait(until.elementIsVisible(search));//this check the search box is visible or not \nawait search.click();\nawait search.sendKeys(\"work\",Key.RETURN);\nawait driver.sleep(5000);",
+              "err": {},
+              "uuid": "4f892b2e-fa22-4ec9-86f0-d7bb76014dbe",
+              "parentUUID": "a625e316-983f-4cd5-a2ad-2185c39c4578",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "this is the amazon site",
+              "fullTitle": "this is a sample of random web site mocha test  this is the amazon site",
+              "timedOut": false,
+              "duration": 5795,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.amazon.in\");\n\n    await driver.manage().window().fullscreen();\n   await driver.wait(until.elementLocated(By.id(\"twotabsearchtextbox\"))).sendKeys(\"mobile\",Key.RETURN);\n   await driver.sleep(2000);",
+              "err": {},
+              "uuid": "1415dc5a-68ad-45a0-ba1b-49fca93f7bcd",
+              "parentUUID": "a625e316-983f-4cd5-a2ad-2185c39c4578",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f892b2e-fa22-4ec9-86f0-d7bb76014dbe",
+            "1415dc5a-68ad-45a0-ba1b-49fca93f7bcd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14648,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": "false",
+        "html": "true",
+        "json": "true"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
