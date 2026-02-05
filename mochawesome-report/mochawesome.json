@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-02-05T05:35:06.630Z",
+    "end": "2026-02-05T05:35:22.715Z",
+    "duration": 16085,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f8a31230-dbc5-49ad-bfa4-9b6e6cff566b",
+      "title": "",
+      "fullFile": "/Users/praveen/Documents/learn_javascript/pair.js",
+      "file": "/pair.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e4a0953a-4c93-4c19-87b1-0f74cb50d0c2",
+          "title": "03-02-2026 login",
+          "fullFile": "/Users/praveen/Documents/learn_javascript/pair.js",
+          "file": "/pair.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook:  test 4-02-2026 time: 7:35 in \"03-02-2026 login\"",
+              "fullTitle": "03-02-2026 login \"before each\" hook:  test 4-02-2026 time: 7:35 in \"03-02-2026 login\"",
+              "timedOut": false,
+              "duration": 1230,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver= await new Builder().forBrowser('chrome').build();\nawait driver.manage().window().maximize();",
+              "err": {},
+              "uuid": "02d84853-7bed-478d-8855-b41414176c0b",
+              "parentUUID": "e4a0953a-4c93-4c19-87b1-0f74cb50d0c2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook: time: 7:35 in \"03-02-2026 login\"",
+              "fullTitle": "03-02-2026 login \"after each\" hook: time: 7:35 in \"03-02-2026 login\"",
+              "timedOut": false,
+              "duration": 56,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "a318191a-8c21-4583-a1e6-6760889068ae",
+              "parentUUID": "e4a0953a-4c93-4c19-87b1-0f74cb50d0c2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "4-02-2026 time: 12:35",
+              "fullTitle": "03-02-2026 login 4-02-2026 time: 12:35",
+              "timedOut": false,
+              "duration": 6906,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.w3schools.com/\");\n console.log(\"the input is correct \");\n await driver.sleep(5000);",
+              "err": {},
+              "uuid": "d88db995-1897-4501-ab02-e3207848f7e5",
+              "parentUUID": "e4a0953a-4c93-4c19-87b1-0f74cb50d0c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "4-02-2026 time: 7:35",
+              "fullTitle": "03-02-2026 login 4-02-2026 time: 7:35",
+              "timedOut": false,
+              "duration": 7142,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.executeScript(\"window.open('https://www.amazon.in')\");\nlet tab=  await driver.getAllWindowHandles();\n       await driver. switchTo().window(tab[1]);\n      // await driver.manage().setTimeouts({implicati:10000});\nawait driver.wait(until.elementLocated(By.id(\"twotabsearchtextbox\"))).sendKeys(\"mobile\",Key.RETURN);\nawait driver.sleep(2000);",
+              "err": {},
+              "uuid": "62cbe9c4-3e7b-46d0-ba9a-da54a28503c5",
+              "parentUUID": "e4a0953a-4c93-4c19-87b1-0f74cb50d0c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d88db995-1897-4501-ab02-e3207848f7e5",
+            "62cbe9c4-3e7b-46d0-ba9a-da54a28503c5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14048,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
